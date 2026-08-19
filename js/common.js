@@ -65,28 +65,6 @@
     }, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
     revealEls.forEach(function (el) { io.observe(el); });
   }
-
-  /* ============================================================
-     CONTACT FORM (static — wire to Formspree/Netlify Forms to go live)
-     ============================================================ */
-        fetch("https://formspree.io/f/xzepypke",  
-        method: "POST",
-        headers: { "Accept": "application/json" },
-        body: new FormData(form)
-      }).then(function (response) {
-        if (response.ok) {
-          status.textContent = "Thanks - we'll be in touch shortly.";
-          status.className = "form-status success";
-          form.reset();
-        } else {
-          status.textContent = "Something went wrong - please email us directly at hello@noevara.com.";
-          status.className = "form-status error";
-        }
-      }).catch(function () {
-        status.textContent = "Something went wrong - please email us directly at hello@noevara.com.";
-        status.className = "form-status error";
-      });
-
   /* ============================================================
      NEWSLETTER SUBSCRIBE FORM
      ============================================================ */
