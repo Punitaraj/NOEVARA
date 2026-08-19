@@ -68,14 +68,3 @@
   /* ============================================================
      NEWSLETTER SUBSCRIBE FORM
      ============================================================ */
-  var subscribeForm = document.getElementById("subscribeForm");
-  var subscribeStatus = document.getElementById("subscribeStatus");
-  if (subscribeForm && subscribeStatus) {
-    subscribeForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      subscribeStatus.textContent = "You're on the list. (Connect this form to Mailchimp / Brevo / your ESP of choice to go live.)";
-      subscribeForm.reset();
-    });
-  }
-
-})();
