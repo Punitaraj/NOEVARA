@@ -89,31 +89,56 @@
       <p><strong>Office:</strong> Strasbourg, France<br><strong>Email:</strong> 	
 contact@noevaraconsulting.com<br><strong>Response time:</strong> Within one business day</p>
     </div>
-    <aside>
-      <form id="contactForm">
-        <div class="form-row"><label for="name">Name</label><input type="text" id="name" required></div>
-        <div class="form-row"><label for="email">Work email</label><input type="email" id="email" required></div>
-        <div class="form-row"><label for="company">Company</label><input type="text" id="company"></div>
-        <div class="form-row"><label for="service">Which capability is loudest?</label><select id="service"><option>AI Consulting & AI Transformation</option><option>Digital Transformation Consulting</option><option>Applied Engineering & Technical Consulting</option><option>Technology & Innovation Consulting</option><option>Organizational & Transformation Diagnostics</option><option>Research & Expert Advisory</option><option>Cybersecurity & Digital Resilience Consulting</option><option>Data Strategy & Analytics Consulting</option><option>ESG & Sustainability Strategy Consulting</option><option>Cloud & Infrastructure Modernization Consulting</option><option>EU Funding & Grants Advisory</option><option>Supply Chain Resilience Consulting</option><option>Workforce Transformation & Future-of-Work Consulting</option><option>Not sure yet</option></select></div>
-        <div class="form-row"><label for="message">A sentence or two on the situation</label><textarea id="message" rows="4"></textarea></div>
-        <button type="submit" class="btn btn--primary" style="width:100%">Send &amp; book a call</button>
-        <p class="form-status" id="formStatus"></p>
-      </form>
-      <form
-  action="https://formspree.io/f/xzepypke"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+      <aside>
+  <form id="contactForm" action="https://formspree.io/f/xzepypke" method="POST">
+
+    <div class="form-row">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-row">
+      <label for="email">Work email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-row">
+      <label for="company">Company</label>
+      <input type="text" id="company" name="company">
+    </div>
+
+    <div class="form-row">
+      <label for="service">Which capability is loudest?</label>
+      <select id="service" name="service">
+        <option>AI Consulting & AI Transformation</option>
+        <option>Digital Transformation Consulting</option>
+        <option>Applied Engineering & Technical Consulting</option>
+        <option>Technology & Innovation Consulting</option>
+        <option>Organizational & Transformation Diagnostics</option>
+        <option>Research & Expert Advisory</option>
+        <option>Cybersecurity & Digital Resilience Consulting</option>
+        <option>Data Strategy & Analytics Consulting</option>
+        <option>ESG & Sustainability Strategy Consulting</option>
+        <option>Cloud & Infrastructure Modernization Consulting</option>
+        <option>EU Funding & Grants Advisory</option>
+        <option>Supply Chain Resilience Consulting</option>
+        <option>Workforce Transformation & Future-of-Work Consulting</option>
+        <option>Not sure yet</option>
+      </select>
+    </div>
+
+    <div class="form-row">
+      <label for="message">A sentence or two on the situation</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn--primary" style="width:100%">
+      Send &amp; book a call
+    </button>
+
+    <p class="form-status" id="formStatus"></p>
+
+  </form>
     </aside>
   </div>
 </section>
