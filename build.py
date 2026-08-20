@@ -228,13 +228,8 @@ print("Data loaded:", len(CAPABILITIES), "capabilities,", len(INDUSTRIES), "indu
 # SHARED MARKUP HELPERS
 # ====================================================================
 
-LOGO_SVG = '''<svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true">
-  <path d="M34 6.7 A20 20 0 1 1 6.7 14" class="logo__ring"/>
-  <circle cx="6.7" cy="14" r="2.6" class="logo__blip"/>
-  <path d="M16 32 L24 24 L16 16" class="logo__arm"/>
-  <path d="M24 24 L34 24" class="logo__spoke"/>
-  <circle cx="34" cy="24" r="3" class="logo__node"/>
-</svg>'''
+LOGO_SVG = '<img src="/assets/logo/noevara-logo-icon-chip.png" class="logo__mark" alt="Noevara">'
+LOGO_SVG_FOOTER = '<img src="/assets/logo/noevara-logo-icon.png" class="logo__mark" alt="Noevara">'
 
 def cap_by_slug(slug):
     for c in CAPABILITIES:
@@ -325,7 +320,7 @@ def footer_html():
     return f'''<footer class="site-footer">
   <div class="wrap footer-grid">
     <div class="footer-brand">
-      <div class="footer-logo">{LOGO_SVG}<span class="logo__word">NOEVARA</span></div>
+      <div class="footer-logo">{LOGO_SVG_FOOTER}<span class="logo__word">NOEVARA</span></div>
       <p>Transformation Intelligence &amp; Strategic Consulting. Strasbourg, France.</p>
     </div>
     <div class="footer-col"><h4>Capabilities</h4><ul>{cap_links}<li><a href="/capabilities/index.html">View all \u2192</a></li></ul></div>
