@@ -194,7 +194,7 @@ TOOLS = [
 ]
 
 INSIGHTS = [
-    dict(type="Whitepaper", title="The AI Readiness Gap: What 40 SME Assessments Actually Found", date="July 2026",
+    dict(type="Whitepaper", title="ai-readiness-gaps", date="July 2026",
          excerpt="Where readiness really breaks down across strategy, data, governance, talent and value — and why it's rarely the technology."),
     dict(type="Newsletter", title="Field Note: Why We Stopped Giving Clients a Single Score", date="June 2026",
          excerpt="A short note on why a blended maturity score almost cost one client the one finding that actually mattered."),
