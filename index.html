@@ -3,287 +3,546 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home | Noevara Consulting</title>
-<meta name="description" content="Noevara Consulting — Transformation Intelligence & Strategic Consulting. Strasbourg, France.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%230B1B32'/%3E%3Cpath d='M16 32 L24 24 L16 16' stroke='%23EEF1F6' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M24 24 L34 24' stroke='%23B8923F' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='34' cy='24' r='3.2' fill='%23B8923F'/%3E%3C/svg%3E">
+<title>NOEVARA - Transformation Intelligence &amp; Strategic Consulting | Strasbourg</title>
+<meta name="description" content="NOEVARA is a diagnostic-first transformation consultancy based in Strasbourg. We combine proprietary evidence-based diagnostics with hands-on strategic and execution consulting for European SMEs, ETIs, and regulated organisations.">
+<link rel="icon" href="images/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/styles.css">
-
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="topbar"><div class="wrap"><a href="insights/index.html">Insights</a><a href="contact/index.html">Client login</a></div></div>
-<header class="site-header">
-  <div class="wrap header-inner">
-    <a href="index.html" class="logo"><svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true">
-  <path d="M34 6.7 A20 20 0 1 1 6.7 14" class="logo__ring"/>
-  <circle cx="6.7" cy="14" r="2.6" class="logo__blip"/>
-  <path d="M16 32 L24 24 L16 16" class="logo__arm"/>
-  <path d="M24 24 L34 24" class="logo__spoke"/>
-  <circle cx="34" cy="24" r="3" class="logo__node"/>
-</svg><span class="logo__word">NOEVARA</span></a>
-    <nav class="mainnav" aria-label="Primary">
-      <ul class="mainnav__list">
-        <li class="mainnav__item" data-menu-item>
-          <a class="mainnav__link" href="capabilities/index.html" data-menu-trigger="capabilities">Capabilities <span class="mainnav__caret"></span></a>
-          <div class="megamenu">
-      <div class="megamenu__head"><span class="megamenu__title">Capabilities</span><a class="megamenu__all" href="capabilities/index.html">View all 13 capabilities →</a></div>
-      <div class="megamenu__grid">
-        <span class="megamenu__group-label">Core Practice</span>
-        <a class="megamenu__link" href="capabilities/ai-consulting.html">AI Consulting & AI Transformation<span>AI Readiness & Maturity Diagnostic</span></a><a class="megamenu__link" href="capabilities/digital-transformation.html">Digital Transformation Consulting<span>Digital Maturity Assessment</span></a><a class="megamenu__link" href="capabilities/applied-engineering.html">Applied Engineering & Technical Consulting<span>Technical Feasibility & Root-Cause Framework</span></a><a class="megamenu__link" href="capabilities/technology-innovation.html">Technology & Innovation Consulting<span>Technology Scouting & Evaluation Matrix</span></a><a class="megamenu__link" href="capabilities/organizational-diagnostics.html">Organizational & Transformation Diagnostics<span>Knowledge & Organizational Readiness Diagnostic</span></a><a class="megamenu__link" href="capabilities/research-advisory.html">Research & Expert Advisory<span>Research Synthesis Framework</span></a>
-        <span class="megamenu__group-label">In Demand Now</span>
-        <a class="megamenu__link" href="capabilities/cybersecurity-resilience.html">Cybersecurity & Digital Resilience Consulting<span>Cyber Resilience & Risk Exposure Diagnostic</span></a><a class="megamenu__link" href="capabilities/data-strategy-analytics.html">Data Strategy & Analytics Consulting<span>Data Value Chain Diagnostic</span></a><a class="megamenu__link" href="capabilities/esg-sustainability.html">ESG & Sustainability Strategy Consulting<span>Sustainability Readiness & Reporting Diagnostic</span></a><a class="megamenu__link" href="capabilities/cloud-infrastructure.html">Cloud & Infrastructure Modernization Consulting<span>Cloud Readiness & Modernization Matrix</span></a><a class="megamenu__link" href="capabilities/eu-funding-grants.html">EU Funding & Grants Advisory<span>Funding Fit & Grant-Readiness Diagnostic</span></a><a class="megamenu__link" href="capabilities/supply-chain-resilience.html">Supply Chain Resilience Consulting<span>Supply Chain Resilience Diagnostic</span></a><a class="megamenu__link" href="capabilities/workforce-transformation.html">Workforce Transformation & Future-of-Work Consulting<span>Workforce Readiness & Skills Diagnostic</span></a>
-      </div>
-    </div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="images/logo-icon.png" alt="NOEVARA logo">
+      <span class="brand-text">
+        <span class="name">NOEVARA</span>
+        <span class="tag">Strategy · Clarity · Impact</span>
+      </span>
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <button class="nav-toggle">Services <span>▾</span></button>
+          <div class="mega">
+            <div class="mega-col-title" style="margin-top:0;">Continuous Intelligence</div>
+            <a class="mega-link" href="service-detail.html?id=tipe" style="grid-column:1/-1;background:var(--paper-50);border-radius:8px;">TIPE <small>Always-on transformation tracking vs. market &amp; competitors</small></a>
+            <div class="mega-col-title">Diagnostic Intelligence Tools</div>
+            <a class="mega-link" href="service-detail.html?id=orgscan">OrgScan <small>Organisational diagnostic</small></a>
+            <a class="mega-link" href="service-detail.html?id=ai-maturity-lens">AI Maturity Lens <small>AI readiness &amp; ROI</small></a>
+            <a class="mega-link" href="service-detail.html?id=eu-regulatory-radar">EU Regulatory Radar <small>Live compliance exposure</small></a>
+            <a class="mega-link" href="service-detail.html?id=perpetua">PERPETUA <small>Organisational health</small></a>
+            <div class="mega-col-title">Core Consulting</div>
+            <a class="mega-link" href="service-detail.html?id=ai-transformation">AI-Powered Transformation</a>
+            <a class="mega-link" href="service-detail.html?id=digital-transformation-sme">Digital Transformation</a>
+            <a class="mega-link" href="service-detail.html?id=transformation-execution">Execution Office</a>
+            <a class="mega-link" href="service-detail.html?id=regulatory-transformation">Regulatory Transformation</a>
+            <div class="mega-col-title">New Practice Areas</div>
+            <a class="mega-link" href="service-detail.html?id=esg-csrd">ESG &amp; CSRD Advisory</a>
+            <a class="mega-link" href="service-detail.html?id=cyber-resilience">Cyber Resilience</a>
+            <div class="mega-col-title">Funding &amp; Knowledge</div>
+            <a class="mega-link" href="service-detail.html?id=research-grant-writing">EU Grant Writing</a>
+            <a class="mega-link" href="services.html" style="font-weight:700;color:var(--orange-500);">View all services →</a>
+          </div>
         </li>
-        <li class="mainnav__item" data-menu-item>
-          <a class="mainnav__link" href="industries/index.html" data-menu-trigger="industries">Industries <span class="mainnav__caret"></span></a>
-          <div class="megamenu">
-      <div class="megamenu__head"><span class="megamenu__title">Industries</span><a class="megamenu__all" href="industries/index.html">View all industries →</a></div>
-      <div class="megamenu__grid">
-        <span class="megamenu__group-label">Who We Serve</span>
-        <a class="megamenu__link" href="industries/smes.html">Small & Medium Enterprises<span>Your first structured diagnostic, sized to an SME's actu…</span></a><a class="megamenu__link" href="industries/mid-sized-companies.html">Mid-Sized Companies (ETIs)<span>European mid-market firms balancing real growth ambition…</span></a><a class="megamenu__link" href="industries/industrial-organizations.html">Industrial Organizations<span>Manufacturing, production and engineering-heavy organiza…</span></a><a class="megamenu__link" href="industries/regulated-industries.html">Regulated Industries<span>Healthcare, finance, and defense — where our privacy-fir…</span></a><a class="megamenu__link" href="industries/public-organizations.html">Public Organizations<span>Public-sector bodies navigating digital transformation a…</span></a><a class="megamenu__link" href="industries/innovation-driven-companies.html">Innovation-Driven Companies<span>R&D-heavy organizations pursuing Horizon Europe and nati…</span></a>
-      </div>
-    </div>
-        </li>
-        <li class="mainnav__item" data-menu-item>
-          <a class="mainnav__link" href="tools/index.html" data-menu-trigger="tools">Tools <span class="mainnav__caret"></span></a>
-          <div class="megamenu">
-      <div class="megamenu__head"><span class="megamenu__title">The Diagnostic Intelligence Portfolio</span><a class="megamenu__all" href="tools/index.html">View all 9 tools →</a></div>
-      <div class="megamenu__grid">
-        <span class="megamenu__group-label">Proprietary Tools, Powered by TIPE</span>
-        <a class="megamenu__link" href="tools/company-growth-diagnostic.html">Company Growth Diagnostic<span>Growth Barriers, Strategic Positioning</span></a><a class="megamenu__link" href="tools/ai-maturity-lens.html">AI Maturity Lens<span>AI Readiness, Automation Fit</span></a><a class="megamenu__link" href="tools/organizational-intelligence-platform.html">Organizational Intelligence Platform<span>Decision-Making, Collaboration</span></a><a class="megamenu__link" href="tools/eu-regulatory-radar.html">EU Regulatory Radar<span>Compliance Prep, Regulatory Impact</span></a><a class="megamenu__link" href="tools/grantiq.html">GrantIQ<span>R&D Strategy, EU Funding Readiness</span></a><a class="megamenu__link" href="tools/eutis.html">EUTIS<span>AI Governance, Ethical Frameworks</span></a><a class="megamenu__link" href="tools/perpetua.html">PERPETUA<span>Employee Capability, Organizational Health</span></a><a class="megamenu__link" href="tools/sentriq.html">SENTRIQ<span>Recovery Planning, Strategic Repositioning</span></a><a class="megamenu__link" href="tools/sensorium.html">SENSORIUM<span>Market Evolution, Technology Shifts</span></a>
-      </div>
-    </div>
-        </li>
-        <li class="mainnav__item" data-menu-item>
-          <a class="mainnav__link" href="insights/index.html" data-menu-trigger="insights">Insights</a>
-          
-        </li>
-        <li class="mainnav__item" data-menu-item>
-          <a class="mainnav__link" href="about/index.html" data-menu-trigger="about">About</a>
-          
-        </li>
+        <li><a href="about.html">About &amp; Values</a></li>
+        <li><a href="about.html#practice">Our Experts</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <div class="header-actions">
-      <button class="header-search" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
-      <a href="contact/index.html" class="btn btn--primary">Get in touch</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+
+    <div class="nav-cta">
+      <div class="nav-phone">
+              </div>
+      <a href="contact.html" class="btn btn-primary btn-sm">Book a Diagnostic Call</a>
+      <button class="nav-toggle-mobile" aria-label="Open menu"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
-<main>
-<section class="masthead" style="background-image:url('https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1600&q=80');">
-  <div class="wrap">
-    <p class="eyebrow masthead__eyebrow">Strasbourg, France — Transformation Intelligence &amp; Strategic Consulting</p>
-    <h1 class="masthead__title">Every transformation starts with an honest diagnosis.</h1>
-    <p class="masthead__sub">Noevara Consulting replaces guesswork with evidence. Thirteen capabilities, nine proprietary diagnostic tools, one integrated platform — built for AI, digital, data, cyber and organizational readiness across Europe.</p>
-    <div class="masthead__actions">
-      <a href="contact/index.html" class="btn btn--primary">Book a Diagnostic Call</a>
-      <a href="capabilities/index.html" class="btn btn--on-dark">Explore Capabilities</a>
+
+<!-- Mobile nav panel -->
+<div class="mobile-nav">
+  <div class="mobile-nav-top">
+    <img src="images/logo-icon.png" alt="NOEVARA">
+    <button class="mobile-nav-close" aria-label="Close menu">&times;</button>
+  </div>
+  <a href="index.html">Home</a>
+  <div class="mnav-group-title">Diagnostics</div>
+  <div class="mnav-sub">
+    <a href="service-detail.html?id=orgscan">OrgScan</a>
+    <a href="service-detail.html?id=ai-maturity-lens">AI Maturity Lens</a>
+    <a href="service-detail.html?id=eu-regulatory-radar">EU Regulatory Radar</a>
+  </div>
+  <a href="services.html">All Services</a>
+  <a href="about.html">About &amp; Values</a>
+  <a href="about.html#practice">Our Experts</a>
+  <a href="insights.html">Insights</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-primary btn-block">Book a Diagnostic Call</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero chart-grid">
+  <div class="glow-blob" style="width:420px;height:420px;top:-120px;right:-80px;background:radial-gradient(circle,rgba(245,130,31,.35),transparent 70%);"></div>
+  <div class="glow-blob" style="width:360px;height:360px;bottom:-140px;left:-100px;background:radial-gradient(circle,rgba(34,96,219,.28),transparent 70%);"></div>
+
+  <svg class="hero-pulse-bg" viewBox="0 0 1000 100" preserveAspectRatio="none" aria-hidden="true" style="position:absolute;bottom:0;left:0;width:100%;height:90px;opacity:.5;z-index:0;">
+    <polyline class="pulse-anim" points="0,50 140,50 165,20 190,80 215,50 1000,50" fill="none" stroke="var(--orange-400)" stroke-width="2"/>
+  </svg>
+
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="hero-copy">
+      <div class="hero-badge"><span class="icon-inline"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v6a4 4 0 0 0 8 0V3"/><path d="M9 15v2a5 5 0 0 0 10 0v-3"/><circle cx="19" cy="12" r="2"/><path d="M5 3H3.5M13 3h1.5"/></svg></span> Diagnose First. Prescribe Second.</div>
+      <h1>We treat your business like a doctor treats a <span class="grad-text">patient.</span></h1>
+      <p class="lede">No diagnosis, no treatment. We run the tests before we write the prescription - evidence-based diagnostics, then a precise plan to fix what's actually wrong.</p>
+      <div class="hero-cta">
+        <a href="contact.html" class="btn btn-primary">Book a Diagnosis</a>
+        <a href="services.html" class="btn btn-outline">See the Instruments</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>9</strong><span>Diagnostic instruments</span></div>
+        <div><strong>15–60 min</strong><span>Per diagnosis</span></div>
+        <div><strong>€800K–2.5M</strong><span>Cost of an undiagnosed problem</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="frame"><img src="images/consulting-discussion.jpg" alt="NOEVARA consultant leading a strategy discussion with a client team"></div>
+      <svg class="hero-pulse-line" viewBox="0 0 400 50" preserveAspectRatio="none" aria-hidden="true">
+        <polyline points="0,25 60,25 80,8 100,42 120,25 400,25" fill="none" stroke="rgba(245,130,31,.6)" stroke-width="2"/>
+      </svg>
+      <div class="hero-floating">
+        <div class="ico icon-amber"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18"/><path d="M6 20v-6"/><path d="M11 20V9"/><path d="M16 20v-4"/><path d="M20 20V6"/><path d="M14 5l6 1-2 5"/></svg></div>
+        <div>
+          <strong>9 instruments. 1 continuous platform.</strong>
+          <span>Every engagement starts with a proprietary diagnostic</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="stat-band">
-  <div class="wrap">
-    <div class="stat"><span class="stat__num">13</span><span class="stat__label">Consulting capabilities</span></div>
-    <div class="stat"><span class="stat__num">9</span><span class="stat__label">Proprietary diagnostic tools</span></div>
-    <div class="stat"><span class="stat__num">6</span><span class="stat__label">Industries served</span></div>
-    <div class="stat"><span class="stat__num">1</span><span class="stat__label">Integrated engagement</span></div>
+<!-- ============ DOCTOR METAPHOR STRIP ============ -->
+<section class="section-sm" style="border-bottom:1px solid var(--line);">
+  <div class="container">
+    <div class="grid grid-3">
+      <div class="reveal" style="text-align:center;padding:0 20px;">
+        <div class="icon" style="margin:0 auto 14px;width:56px;height:56px;font-size:1.6rem;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v6a4 4 0 0 0 8 0V3"/><path d="M9 15v2a5 5 0 0 0 10 0v-3"/><circle cx="19" cy="12" r="2"/><path d="M5 3H3.5M13 3h1.5"/></svg></div>
+        <h4 style="margin-bottom:6px;">1. Diagnose</h4>
+        <p style="color:var(--ink-500);font-size:.9rem;margin:0;">Run the tests. Find the real cause, not the symptom.</p>
+      </div>
+      <div class="reveal" style="text-align:center;padding:0 20px;">
+        <div class="icon" style="margin:0 auto 14px;width:56px;height:56px;font-size:1.6rem;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1"/><path d="M9 11h6M9 15h6M9 19h3"/></svg></div>
+        <h4 style="margin-bottom:6px;">2. Prescribe</h4>
+        <p style="color:var(--ink-500);font-size:.9rem;margin:0;">A precise plan for what you actually have - not a generic one.</p>
+      </div>
+      <div class="reveal" style="text-align:center;padding:0 20px;">
+        <div class="icon" style="margin:0 auto 14px;width:56px;height:56px;font-size:1.6rem;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v5h5"/><path d="M20 20v-5h-5"/><path d="M5.5 9A7 7 0 0 1 19 9.5"/><path d="M18.5 15A7 7 0 0 1 5 14.5"/></svg></div>
+        <h4 style="margin-bottom:6px;">3. Treat &amp; Monitor</h4>
+        <p style="color:var(--ink-500);font-size:.9rem;margin:0;">We stay through execution, then check back to confirm it worked.</p>
+      </div>
+    </div>
   </div>
 </section>
 
+<!-- ============ WHO WE SERVE STRIP ============ -->
+<section class="sector-strip">
+  <div class="container">
+    <span class="label">Every sector where these symptoms show up</span>
+    <div class="sector-pills">
+      <span class="sector-pill">SMEs &amp; ETIs</span>
+      <span class="sector-pill">Industrial &amp; Manufacturing</span>
+      <span class="sector-pill">Finance &amp; Healthcare</span>
+      <span class="sector-pill">Critical Infrastructure</span>
+      <span class="sector-pill">Public Sector</span>
+      <span class="sector-pill">Scale-ups &amp; Innovators</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY NOEVARA EXISTS ============ -->
 <section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <div><p class="eyebrow">The Reality</p><h2 class="section-title">Six conversations we keep having with leadership teams.</h2></div>
+  <div class="container">
+    <div class="split">
+      <div class="reveal">
+        <div class="eyebrow">Why NOEVARA Exists</div>
+        <h2>Most consultants guess. We test first.</h2>
+        <p class="lede">Transformation projects don't usually fail from a lack of ambition. They fail because someone prescribed a fix before running a diagnosis.</p>
+        <a href="about.html" class="btn btn-outline-navy">Our Philosophy</a>
+        <a href="about.html#practice" class="btn btn-outline-navy" style="margin-left:10px;">Meet The Practice</a>
+      </div>
+      <div class="img-frame reveal"><img src="images/strategy-board.jpg" alt="Client insights to strategy to impact - mapped on a strategy board"></div>
     </div>
-    <div class="tile-grid"><div class="tile">
-      <span class="side-card__label">01</span>
-      <span class="tile__title">“We keep hearing we should be doing something with AI.”</span>
-      <span class="tile__desc">No one disagrees AI matters. No one can point to where it should actually create value first.</span>
-    </div><div class="tile">
-      <span class="side-card__label">02</span>
-      <span class="tile__title">A digital initiative that stalled halfway.</span>
-      <span class="tile__desc">The tools were bought. The process didn't change. Nobody can say whether it's a culture problem or a systems problem.</span>
-    </div><div class="tile">
-      <span class="side-card__label">03</span>
-      <span class="tile__title">A technical proposal nobody can independently verify.</span>
-      <span class="tile__desc">The team that wrote it would also deliver it. Leadership is being asked to trust the mark on their own homework.</span>
-    </div><div class="tile">
-      <span class="side-card__label">04</span>
-      <span class="tile__title">Three vendors, three opinions, zero criteria.</span>
-      <span class="tile__desc">Every technology pitch sounds convincing in the room. There's no shared, objective basis for choosing between them.</span>
-    </div><div class="tile">
-      <span class="side-card__label">05</span>
-      <span class="tile__title">Critical knowledge lives in two people's heads.</span>
-      <span class="tile__desc">Everyone knows it. Nobody has done anything about it. One resignation away from a real problem.</span>
-    </div><div class="tile">
-      <span class="side-card__label">06</span>
-      <span class="tile__title">“Are we actually exposed, or just anxious?”</span>
-      <span class="tile__desc">Security has become a board-level question, but nobody has turned that anxiety into a ranked, evidenced risk picture.</span>
-    </div></div>
   </div>
 </section>
 
-<section class="section" style="background:var(--paper-2)">
-  <div class="wrap">
-    <div class="section-head">
-      <div><p class="eyebrow">Capabilities</p><h2 class="section-title">How we help clients.</h2></div>
-      <a class="section-head__link" href="capabilities/index.html">View all 13 capabilities →</a>
+<!-- ============ IF YOU RECOGNISE THESE (FLIP CARDS) ============ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;">If You Recognise Any of These</div>
+      <h2>We should talk.</h2>
+      <p class="lede">Hover or tap each card to see the instrument built specifically to answer it.</p>
     </div>
-    <div class="tile-grid tile-grid--compact"><a class="tile" href="capabilities/ai-consulting.html">
-          <span class="tile__tag tile__tag--core">Core Practice</span>
-          <span class="tile__title">AI Consulting & AI Transformation</span>
-          <span class="tile__desc">We find where AI can realistically create value in your organization — starting with an honest readiness assessment, not a tools demonstration.</span>
-          <span class="tile__link">Read more <span class="tile__link-arrow">→</span></span>
-        </a><a class="tile" href="capabilities/digital-transformation.html">
-          <span class="tile__tag tile__tag--core">Core Practice</span>
-          <span class="tile__title">Digital Transformation Consulting</span>
-          <span class="tile__desc">We treat digital transformation as an organizational question first, technology second — assessing whether tech, process, culture and customer experience actually work together.</span>
-          <span class="tile__link">Read more <span class="tile__link-arrow">→</span></span>
-        </a><a class="tile" href="capabilities/applied-engineering.html">
-          <span class="tile__tag tile__tag--core">Core Practice</span>
-          <span class="tile__title">Applied Engineering & Technical Consulting</span>
-          <span class="tile__desc">Rigorous, independent engineering analysis for specific technical questions — feasibility studies, process optimization, industrial problem-solving.</span>
-          <span class="tile__link">Read more <span class="tile__link-arrow">→</span></span>
-        </a><a class="tile" href="capabilities/technology-innovation.html">
-          <span class="tile__tag tile__tag--core">Core Practice</span>
-          <span class="tile__title">Technology & Innovation Consulting</span>
-          <span class="tile__desc">We scout, evaluate and sequence emerging technologies against your actual priorities — replacing internal debate with a documented, criteria-based evaluation.</span>
-          <span class="tile__link">Read more <span class="tile__link-arrow">→</span></span>
-        </a><a class="tile" href="capabilities/organizational-diagnostics.html">
-          <span class="tile__tag tile__tag--core">Core Practice</span>
-          <span class="tile__title">Organizational & Transformation Diagnostics</span>
-          <span class="tile__desc">We assess what's actually happening inside your organization — knowledge, intellectual capital and change readiness — before you commit to a major initiative.</span>
-          <span class="tile__link">Read more <span class="tile__link-arrow">→</span></span>
-        </a><a class="tile" href="capabilities/research-advisory.html">
-          <span class="tile__tag tile__tag--core">Core Practice</span>
-          <span class="tile__title">Research & Expert Advisory</span>
-          <span class="tile__desc">Academic-grade research methodology applied to specific technical or market questions — where the value is evidence and rigor, not speed.</span>
-          <span class="tile__link">Read more <span class="tile__link-arrow">→</span></span>
-        </a></div>
+    <div class="grid grid-3">
+
+      <div class="flip-card problem-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-face flip-front">
+            <div><span class="num">01</span><h4>"We don't actually know where AI would create value in our business."</h4></div>
+            <p>Tap to see the fix →</p>
+          </div>
+          <div class="flip-face flip-back">
+            <p><strong>AI Maturity Lens</strong> gives you a scored, benchmarked answer in 15 minutes - with a euro-denominated ROI opportunity attached.</p>
+            <a class="tiny-link" href="service-detail.html?id=ai-maturity-lens">View AI Maturity Lens →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card problem-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-face flip-front">
+            <div><span class="num">02</span><h4>"Our team feels dysfunctional but nobody can name why."</h4></div>
+            <p>Tap to see the fix →</p>
+          </div>
+          <div class="flip-face flip-back">
+            <p><strong>OrgScan</strong> and <strong>PERPETUA</strong> turn that feeling into a root-cause report the board can act on - in under an hour.</p>
+            <a class="tiny-link" href="service-detail.html?id=orgscan">View OrgScan →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card problem-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-face flip-front">
+            <div><span class="num">03</span><h4>"We don't know which EU regulations actually apply to us."</h4></div>
+            <p>Tap to see the fix →</p>
+          </div>
+          <div class="flip-face flip-back">
+            <p><strong>EU Regulatory Radar</strong> and <strong>EUTIS</strong> tell you exactly what applies, what's at risk, and what to do first.</p>
+            <a class="tiny-link" href="service-detail.html?id=eu-regulatory-radar">View Regulatory Radar →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card problem-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-face flip-front">
+            <div><span class="num">04</span><h4>"Our growth has stalled and we're not sure why."</h4></div>
+            <p>Tap to see the fix →</p>
+          </div>
+          <div class="flip-face flip-back">
+            <p><strong>Company Growth Diagnostic</strong> pinpoints the real bottleneck in under ten minutes - before budget goes to the wrong fix.</p>
+            <a class="tiny-link" href="service-detail.html?id=company-growth">View Growth Diagnostic →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card problem-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-face flip-front">
+            <div><span class="num">05</span><h4>"We're leaving EU funding on the table."</h4></div>
+            <p>Tap to see the fix →</p>
+          </div>
+          <div class="flip-face flip-back">
+            <p><strong>GrantIQ</strong> and our Research &amp; Grant Writing practice identify and capture it - from Horizon Europe to CIR/CII.</p>
+            <a class="tiny-link" href="service-detail.html?id=grantiq">View GrantIQ →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card problem-card reveal">
+        <div class="flip-card-inner">
+          <div class="flip-face flip-front">
+            <div><span class="num">06</span><h4>"We've done a strategy project before and nothing changed."</h4></div>
+            <p>Tap to see the fix →</p>
+          </div>
+          <div class="flip-face flip-back">
+            <p>Our <strong>7D Transformation Model</strong> is built specifically to prevent that outcome - from diagnosis through execution.</p>
+            <a class="tiny-link" href="about.html#seven-d">See the 7D Model →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
+<!-- ============ TIPE / 5-STEP FRAMEWORK (FLIP CARDS) ============ -->
+<section class="section section-navy">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;">TIPE - Our Diagnostic System</div>
+      <h2>Five stages. One exam.</h2>
+      <p class="lede">The same discipline a good doctor follows: examine, diagnose, treat, monitor, and build long-term health - not just relieve the symptom.</p>
+    </div>
+    <div class="grid grid-5">
+      <div class="flip-card reveal" style="height:220px;">
+        <div class="flip-card-inner">
+          <div class="flip-face flip-front"><div><span class="num">01</span><h4>Diagnose</h4></div><p>See what others miss.</p></div>
+          <div class="flip-face flip-back"><p>Structured, evidence-based diagnostic and maturity evaluation via our TIPE instruments - not a workshop.</p></div>
+        </div>
+      </div>
+      <div class="flip-card reveal" style="height:220px;">
+        <div class="flip-card-inner">
+          <div class="flip-face flip-front"><div><span class="num">02</span><h4>Design</h4></div><p>Strategies rooted in truth.</p></div>
+          <div class="flip-face flip-back"><p>Prioritisation, roadmap creation, and investment planning built directly from diagnostic evidence.</p></div>
+        </div>
+      </div>
+      <div class="flip-card reveal" style="height:220px;">
+        <div class="flip-card-inner">
+          <div class="flip-face flip-front"><div><span class="num">03</span><h4>Transform</h4></div><p>Turn insight into action.</p></div>
+          <div class="flip-face flip-back"><p>Implementation support, project coordination, and change management - we stay for execution.</p></div>
+        </div>
+      </div>
+      <div class="flip-card reveal" style="height:220px;">
+        <div class="flip-card-inner">
+          <div class="flip-face flip-front"><div><span class="num">04</span><h4>Measure</h4></div><p>Drive data-informed decisions.</p></div>
+          <div class="flip-face flip-back"><p>KPI monitoring, governance, and progress reviews delivered as a live performance dashboard.</p></div>
+        </div>
+      </div>
+      <div class="flip-card reveal" style="height:220px;">
+        <div class="flip-card-inner">
+          <div class="flip-face flip-front"><div><span class="num">05</span><h4>Elevate</h4></div><p>Build future-ready organisations.</p></div>
+          <div class="flip-face flip-back"><p>Employee enablement and knowledge transfer that leaves you with a self-sustaining capability.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal" style="max-width:760px;margin:52px auto 0;text-align:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius-md);padding:32px 36px;">
+      <p style="color:#e4ecf8;font-size:1rem;margin-bottom:18px;">TIPE isn't just the name of this philosophy - it's also a live platform. Once your diagnosis is done, TIPE keeps measuring: tracking your transformation against the market and your competitors, continuously, long after the workshop would have ended.</p>
+      <a href="service-detail.html?id=tipe" class="btn btn-outline">See TIPE the Platform</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SAMPLE DIAGNOSTIC OUTPUT ============ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="split">
+      <div class="reveal">
+        <div class="eyebrow">What You Actually Receive</div>
+        <h2>Not a slide deck. A read-out.</h2>
+        <p class="lede">This is the shape of a real OrgScan result: every domain scored, the weak spots named, and a priority order - the same clarity you'd expect from a set of test results, not a strategy workshop.</p>
+        <ul style="margin-top:22px;">
+          <li style="margin-bottom:12px;display:flex;gap:10px;align-items:flex-start;"><span class="icon-inline" style="margin-top:2px;color:var(--orange-500);"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg></span><span style="color:var(--ink-500);">Every domain scored out of 100, not summarised in adjectives.</span></li>
+          <li style="margin-bottom:12px;display:flex;gap:10px;align-items:flex-start;"><span class="icon-inline" style="margin-top:2px;color:var(--orange-500);"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg></span><span style="color:var(--ink-500);">A single priority finding - what to fix first, and why.</span></li>
+          <li style="margin-bottom:0;display:flex;gap:10px;align-items:flex-start;"><span class="icon-inline" style="margin-top:2px;color:var(--orange-500);"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12l5 5L20 6"/></svg></span><span style="color:var(--ink-500);">Delivered in a session with your team, not emailed as a PDF.</span></li>
+        </ul>
+        <a href="service-detail.html?id=orgscan" class="btn btn-outline-navy">See How OrgScan Works</a>
+      </div>
+
+      <div class="reveal">
+        <div class="card" style="padding:0;overflow:hidden;">
+          <div style="background:var(--navy-950);color:#fff;padding:20px 24px;display:flex;justify-content:space-between;align-items:center;">
+            <div>
+              <div style="font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:var(--orange-400);font-weight:700;">OrgScan · Sample Output</div>
+              <div style="font-family:var(--ff-head);font-size:1.05rem;">Organisational Diagnostic Report</div>
+            </div>
+            <div style="text-align:right;font-size:.72rem;color:#9fb4cf;">Illustrative<br>example</div>
+          </div>
+          <div style="padding:26px 24px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;"><span style="font-size:.86rem;font-weight:600;color:var(--navy-900);">Leadership &amp; Strategy</span><span style="font-size:.82rem;font-weight:700;color:var(--orange-500);">42 / 100</span></div>
+            <div style="height:8px;border-radius:5px;background:var(--paper-100);overflow:hidden;margin-bottom:18px;"><div style="height:100%;width:42%;background:var(--orange-500);border-radius:5px;"></div></div>
+
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;"><span style="font-size:.86rem;font-weight:600;color:var(--navy-900);">Communication</span><span style="font-size:.82rem;font-weight:700;color:var(--orange-500);">38 / 100</span></div>
+            <div style="height:8px;border-radius:5px;background:var(--paper-100);overflow:hidden;margin-bottom:18px;"><div style="height:100%;width:38%;background:var(--orange-500);border-radius:5px;"></div></div>
+
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;"><span style="font-size:.86rem;font-weight:600;color:var(--navy-900);">Process Discipline</span><span style="font-size:.82rem;font-weight:700;color:var(--blue-500);">61 / 100</span></div>
+            <div style="height:8px;border-radius:5px;background:var(--paper-100);overflow:hidden;margin-bottom:18px;"><div style="height:100%;width:61%;background:var(--blue-500);border-radius:5px;"></div></div>
+
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;"><span style="font-size:.86rem;font-weight:600;color:var(--navy-900);">Digital &amp; AI Readiness</span><span style="font-size:.82rem;font-weight:700;color:var(--blue-500);">57 / 100</span></div>
+            <div style="height:8px;border-radius:5px;background:var(--paper-100);overflow:hidden;margin-bottom:20px;"><div style="height:100%;width:57%;background:var(--blue-500);border-radius:5px;"></div></div>
+
+            <div class="problem-box" style="padding:16px 18px;">
+              <h4 style="font-size:.82rem;margin-bottom:6px;">Priority Finding</h4>
+              <p style="font-size:.85rem;margin:0;">Leadership communication breakdown is suppressing execution speed across three departments - recommended as the first 90-day intervention.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST SIGNALS, BY THE NUMBERS ============ -->
+<section class="section-sm">
+  <div class="container">
+    <div class="grid grid-4 reveal">
+      <div class="card" style="text-align:center;">
+        <div class="icon icon-amber" style="margin:0 auto 14px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 14h6l-1 8 9-13h-6l0-7z"/></svg></div>
+        <strong style="display:block;font-family:var(--ff-head);font-size:1.6rem;color:var(--navy-950);">15–60 min</strong>
+        <span style="font-size:.84rem;color:var(--ink-500);">Consultant-grade speed, not weeks of interviews</span>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div class="icon icon-blue" style="margin:0 auto 14px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 11-4.5-2.5-8-6-8-11V5l8-3z"/><rect x="9" y="11" width="6" height="5" rx="1"/><path d="M12 11V9.5a1.5 1.5 0 0 1 3 0V11"/></svg></div>
+        <strong style="display:block;font-family:var(--ff-head);font-size:1.6rem;color:var(--navy-950);">100% Offline</strong>
+        <span style="font-size:.84rem;color:var(--ink-500);">Privacy-first - nothing leaves your walls</span>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div class="icon icon-teal" style="margin:0 auto 14px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="13" rx="2"/><path d="M6 12h2l1.5-3 2 6 1.5-3H18"/><path d="M8 21h8"/></svg></div>
+        <strong style="display:block;font-family:var(--ff-head);font-size:1.6rem;color:var(--navy-950);">9 + 1</strong>
+        <span style="font-size:.84rem;color:var(--ink-500);">Point-in-time instruments, plus TIPE, always on</span>
+      </div>
+      <div class="card" style="text-align:center;">
+        <div class="icon icon-violet" style="margin:0 auto 14px;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/></svg></div>
+        <strong style="display:block;font-family:var(--ff-head);font-size:1.6rem;color:var(--navy-950);">7D Model</strong>
+        <span style="font-size:.84rem;color:var(--ink-500);">One disciplined methodology, start to finish</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES PREVIEW ============ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;">The Instrument Panel</div>
+      <h2>Nine tools. Nine questions you're currently guessing at.</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card reveal"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5 13 13l-4.5 2.5L11 11l4.5-2.5z"/></svg></div><h3>OrgScan</h3><p>12-domain organisational scan that names root causes in under 30 minutes.</p><a href="service-detail.html?id=orgscan" class="btn btn-sm btn-outline-navy" style="margin-top:12px;">Learn more</a></div>
+      <div class="card reveal"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="1.5"/><rect x="10" y="2.5" width="1.6" height="3"/><rect x="12.4" y="2.5" width="1.6" height="3"/><rect x="10" y="18.5" width="1.6" height="3"/><rect x="12.4" y="18.5" width="1.6" height="3"/><rect x="2.5" y="10" width="3" height="1.6"/><rect x="2.5" y="12.4" width="3" height="1.6"/><rect x="18.5" y="10" width="3" height="1.6"/><rect x="18.5" y="12.4" width="3" height="1.6"/></svg></div><h3>AI Maturity Lens</h3><p>Consultancy-grade AI diagnostic with a euro-denominated ROI opportunity.</p><a href="service-detail.html?id=ai-maturity-lens" class="btn btn-sm btn-outline-navy" style="margin-top:12px;">Learn more</a></div>
+      <div class="card reveal"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1.2"/><path d="M12 12l7-4"/><path d="M12 12a6 6 0 0 1 6-6"/><path d="M12 12a9.5 9.5 0 0 1 9.5-9.5"/><circle cx="12" cy="12" r="9" stroke-dasharray="2 3"/></svg></div><h3>EU Regulatory Radar</h3><p>Live regulatory intelligence across seven EU frameworks with a proposal engine.</p><a href="service-detail.html?id=eu-regulatory-radar" class="btn btn-sm btn-outline-navy" style="margin-top:12px;">Learn more</a></div>
+    </div>
+    <div style="text-align:center;margin-top:40px;">
+      <a href="services.html" class="btn btn-navy">View All 9 Diagnostics &amp; Full Service Portfolio</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VALUES PREVIEW ============ -->
 <section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <div><p class="eyebrow">Industries</p><h2 class="section-title">Who we work with.</h2></div>
-      <a class="section-head__link" href="industries/index.html">View all industries →</a>
+  <div class="container">
+    <div class="split">
+      <div class="img-frame reveal"><img src="images/team-meeting.jpg" alt="NOEVARA team collaborating"></div>
+      <div class="reveal">
+        <div class="eyebrow">Our Values</div>
+        <h2>What we believe before we say a word about your business.</h2>
+        <div style="margin-top:24px;">
+          <div style="display:flex;gap:14px;margin-bottom:18px;align-items:flex-start;">
+            <div class="icon icon-rose" style="width:38px;height:38px;flex-shrink:0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.5-4.5"/></svg></div>
+            <div><strong style="color:var(--navy-950);display:block;">Evidence Over Assumption</strong><span style="color:var(--ink-500);font-size:.92rem;">We measure before we recommend.</span></div>
+          </div>
+          <div style="display:flex;gap:14px;margin-bottom:18px;align-items:flex-start;">
+            <div class="icon icon-blue" style="width:38px;height:38px;flex-shrink:0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/></svg></div>
+            <div><strong style="color:var(--navy-950);display:block;">Radical Clarity</strong><span style="color:var(--ink-500);font-size:.92rem;">Findings a board can act on immediately.</span></div>
+          </div>
+          <div style="display:flex;gap:14px;margin-bottom:0;align-items:flex-start;">
+            <div class="icon icon-teal" style="width:38px;height:38px;flex-shrink:0;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12l5-4 4 3 3-3 5 4"/><path d="M6 12l4 4 2-2"/><path d="M12 12l3 3 2-2"/><path d="M2 12v3l3 3M22 12v3l-3 3"/></svg></div>
+            <div><strong style="color:var(--navy-950);display:block;">Partnership, Not Projects</strong><span style="color:var(--ink-500);font-size:.92rem;">We stay through treatment, not just diagnosis.</span></div>
+          </div>
+        </div>
+        <a href="about.html#values" class="btn btn-outline-navy" style="margin-top:24px;">Read All Six Values</a>
+      </div>
     </div>
-    <div class="tile-grid tile-grid--compact"><a class="tile" href="industries/smes.html">
-          
-          <span class="tile__title">Small & Medium Enterprises</span>
-          <span class="tile__desc">Your first structured diagnostic, sized to an SME's actual budget and bandwidth — before you commit to a larger transformation.</span>
-          <span class="tile__link">Read more <span class="tile__link-arrow">→</span></span>
-        </a><a class="tile" href="industries/mid-sized-companies.html">
-          
-          <span class="tile__title">Mid-Sized Companies (ETIs)</span>
-          <span class="tile__desc">European mid-market firms balancing real growth ambitions against limited internal transformation capacity.</span>
-          <span class="tile__link">Read more <span class="tile__link-arrow">→</span></span>
-        </a><a class="tile" href="industries/industrial-organizations.html">
-          
-          <span class="tile__title">Industrial Organizations</span>
-          <span class="tile__desc">Manufacturing, production and engineering-heavy organizations where operational and technical diagnostics matter most.</span>
-          <span class="tile__link">Read more <span class="tile__link-arrow">→</span></span>
-        </a><a class="tile" href="industries/regulated-industries.html">
-          
-          <span class="tile__title">Regulated Industries</span>
-          <span class="tile__desc">Healthcare, finance, and defense — where our privacy-first, offline-capable diagnostic platform is often the deciding factor.</span>
-          <span class="tile__link">Read more <span class="tile__link-arrow">→</span></span>
-        </a><a class="tile" href="industries/public-organizations.html">
-          
-          <span class="tile__title">Public Organizations</span>
-          <span class="tile__desc">Public-sector bodies navigating digital transformation and compliance mandates under real budget and procurement constraints.</span>
-          <span class="tile__link">Read more <span class="tile__link-arrow">→</span></span>
-        </a><a class="tile" href="industries/innovation-driven-companies.html">
-          
-          <span class="tile__title">Innovation-Driven Companies</span>
-          <span class="tile__desc">R&D-heavy organizations pursuing Horizon Europe and national funding, where a rigorous funding-fit diagnostic changes the odds.</span>
-          <span class="tile__link">Read more <span class="tile__link-arrow">→</span></span>
-        </a></div>
   </div>
 </section>
 
-<section class="quote-band" style="background-image:url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1800&q=80');">
-  <blockquote>Transformation should begin with understanding, not assumptions.</blockquote>
-  <cite>— The Noevara core philosophy</cite>
-</section>
-
-<section class="section" style="background:var(--ink);color:var(--text-light)">
-  <div class="wrap">
-    <div class="section-head">
-      <div><p class="eyebrow eyebrow--light">TIPE</p><h2 class="section-title" style="color:var(--text-light)">The platform behind every engagement.</h2></div>
-      <a class="section-head__link" href="tools/index.html" style="color:var(--brass-soft)">Explore the diagnostic portfolio →</a>
+<!-- ============ INSIGHTS PREVIEW ============ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal" style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;max-width:100%;">
+      <div>
+        <div class="eyebrow">Insights</div>
+        <h2 style="margin-bottom:0;">Field notes from the exam room</h2>
+      </div>
+      <a href="insights.html" class="btn btn-outline-navy">All Insights</a>
     </div>
-    <p style="max-width:70ch;color:var(--text-light-mute);font-size:1.02rem">TIPE — the Transformation Intelligence Platform &amp; Ecosystem — is Noevara's proprietary diagnostic infrastructure. Nine named tools, offline-capable and privacy-first, all built on one shared evidence-and-scoring foundation.</p>
+    <div class="grid grid-3" id="home-insights"></div>
   </div>
 </section>
 
+<!-- ============ CTA BANNER ============ -->
 <section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <div><p class="eyebrow">From Noevara</p><h2 class="section-title">Newsletter &amp; whitepapers.</h2></div>
-      <a class="section-head__link" href="insights/index.html">View all insights →</a>
-    </div>
-    <div class="insight-strip"><div class="insight-tile">
-      <span class="insight-tile__type">Whitepaper</span>
-      <h3>The AI Readiness Gap: What 40 SME Assessments Actually Found</h3>
-      <p>Where readiness really breaks down across strategy, data, governance, talent and value — and why it's rarely the technology.</p>
-      <span class="insight-tile__meta">July 2026</span>
-    </div><div class="insight-tile">
-      <span class="insight-tile__type">Newsletter</span>
-      <h3>Field Note: Why We Stopped Giving Clients a Single Score</h3>
-      <p>A short note on why a blended maturity score almost cost one client the one finding that actually mattered.</p>
-      <span class="insight-tile__meta">June 2026</span>
-    </div><div class="insight-tile">
-      <span class="insight-tile__type">Whitepaper</span>
-      <h3>CSRD Without the Scramble: Building the Reporting System Early</h3>
-      <p>A practical readiness checklist for organizations facing their first CSRD reporting cycle.</p>
-      <span class="insight-tile__meta">May 2026</span>
-    </div></div>
-  </div>
-</section><section class="cta-band">
-  <div class="wrap">
-    <h2 class="cta-band__title">Tell us which problem is loudest right now.</h2>
-    <div class="cta-band__actions">
-      <a class="btn btn--primary" href="contact/index.html">Book a Diagnostic Call</a>
-      <a class="btn btn--on-dark" href="capabilities/index.html">Browse all capabilities</a>
+  <div class="container">
+    <div class="cta-banner reveal">
+      <div>
+        <h2>Don't guess. Get diagnosed.</h2>
+        <p>One conversation, the right instrument, a clear answer - before you spend a euro fixing the wrong thing.</p>
+      </div>
+      <div class="btn-group">
+        <a href="contact.html" class="btn btn-primary">Book a Diagnosis</a>
+        <a href="services.html" class="btn btn-outline">See the Instruments</a>
+      </div>
     </div>
   </div>
 </section>
-</main>
-<footer class="site-footer">
-  <div class="wrap footer-grid">
-    <div class="footer-brand">
-      <div class="footer-logo"><svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true">
-  <path d="M34 6.7 A20 20 0 1 1 6.7 14" class="logo__ring"/>
-  <circle cx="6.7" cy="14" r="2.6" class="logo__blip"/>
-  <path d="M16 32 L24 24 L16 16" class="logo__arm"/>
-  <path d="M24 24 L34 24" class="logo__spoke"/>
-  <circle cx="34" cy="24" r="3" class="logo__node"/>
-</svg><span class="logo__word">NOEVARA</span></div>
-      <p>Transformation Intelligence &amp; Strategic Consulting. Strasbourg, France.</p>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo-icon-transparent.png" alt="NOEVARA">
+        <p>Transformation Intelligence &amp; Strategic Consulting. Evidence-based diagnostics and execution-focused consulting for European organisations of every sector.</p>
+        <div class="footer-socials">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="X / Twitter">𝕏</a>
+        </div>
+      </div>
+      <div>
+        <h5>Diagnostics</h5>
+        <ul>
+          <li><a href="service-detail.html?id=orgscan">OrgScan</a></li>
+          <li><a href="service-detail.html?id=ai-maturity-lens">AI Maturity Lens</a></li>
+          <li><a href="service-detail.html?id=eu-regulatory-radar">EU Regulatory Radar</a></li>
+          <li><a href="service-detail.html?id=perpetua">PERPETUA</a></li>
+          <li><a href="services.html">View all 9 →</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About &amp; Values</a></li>
+          <li><a href="about.html#practice">Our Experts</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul class="footer-contact">
+          <li><span class="icon-inline"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.3"/></svg></span> Strasbourg, France</li>
+          <li><span class="icon-inline"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.5l1.5 4-2 1.5a12 12 0 0 0 6 6l1.5-2 4 1.5V19a2 2 0 0 1-2 2C10 21 3 14 3 6a2 2 0 0 1 2-2z"/></svg></span> +33 7 52 71 20 15</li>
+          <li><span class="icon-inline"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg></span> contact@noevaraconsulting.com</li>
+        </ul>
+      </div>
     </div>
-    <div class="footer-col"><h4>Capabilities</h4><ul><li><a href="capabilities/ai-consulting.html">AI Consulting & AI Transformation</a></li><li><a href="capabilities/digital-transformation.html">Digital Transformation Consulting</a></li><li><a href="capabilities/applied-engineering.html">Applied Engineering & Technical Consulting</a></li><li><a href="capabilities/technology-innovation.html">Technology & Innovation Consulting</a></li><li><a href="capabilities/organizational-diagnostics.html">Organizational & Transformation Diagnostics</a></li><li><a href="capabilities/research-advisory.html">Research & Expert Advisory</a></li><li><a href="capabilities/index.html">View all →</a></li></ul></div>
-    <div class="footer-col"><h4>Industries</h4><ul><li><a href="industries/smes.html">Small & Medium Enterprises</a></li><li><a href="industries/mid-sized-companies.html">Mid-Sized Companies (ETIs)</a></li><li><a href="industries/industrial-organizations.html">Industrial Organizations</a></li><li><a href="industries/regulated-industries.html">Regulated Industries</a></li><li><a href="industries/public-organizations.html">Public Organizations</a></li><li><a href="industries/innovation-driven-companies.html">Innovation-Driven Companies</a></li></ul></div>
-    <div class="footer-col"><h4>Tools</h4><ul><li><a href="tools/company-growth-diagnostic.html">Company Growth Diagnostic</a></li><li><a href="tools/ai-maturity-lens.html">AI Maturity Lens</a></li><li><a href="tools/organizational-intelligence-platform.html">Organizational Intelligence Platform</a></li><li><a href="tools/eu-regulatory-radar.html">EU Regulatory Radar</a></li><li><a href="tools/grantiq.html">GrantIQ</a></li><li><a href="tools/eutis.html">EUTIS</a></li><li><a href="tools/index.html">View all →</a></li></ul></div>
-    <div class="footer-col"><h4>Company</h4><ul>
-      <li><a href="about/index.html">About Noevara</a></li>
-      <li><a href="insights/index.html">Insights</a></li>
-      <li><a href="contact/index.html">Contact</a></li>
-    </ul></div>
-  </div>
-  <div class="wrap footer-legal">
-    <span>© <span id="year"></span> Noevara Consulting SAS — Strasbourg, France. All rights reserved.</span>
-    <span>	
-contact@noevaraconsulting.com</span>
+    <div class="footer-bottom">
+      <span>© 2026 NOEVARA Consulting. All rights reserved.</span>
+      <span>Strasbourg, France · Strategy. Clarity. Impact.</span>
+    </div>
   </div>
 </footer>
-<script src="js/common.js" defer></script>
+
+<script src="js/icons.js"></script>
+<script src="js/insights-data.js"></script>
+<script src="js/services-data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  // Render 3 latest insights on homepage
+  const homeGrid = document.getElementById("home-insights");
+  if (homeGrid) {
+    INSIGHTS.slice(0, 3).forEach(item => {
+      homeGrid.insertAdjacentHTML("beforeend", `
+        <a href="insight-detail.html?id=${item.id}" class="insight-card reveal in" style="display:flex;">
+          <div class="insight-media"><span class="insight-type">${item.type}</span>${svgIcon(item.icon,28)}</div>
+          <div class="insight-body">
+            <div class="insight-meta">${new Date(item.date).toLocaleDateString('en-GB',{month:'short',day:'numeric',year:'numeric'})} · ${item.readTime}</div>
+            <h3>${item.title}</h3>
+            <p>${item.excerpt}</p>
+            <span class="read-more">Read article →</span>
+          </div>
+        </a>
+      `);
+    });
+  }
+</script>
 </body>
 </html>

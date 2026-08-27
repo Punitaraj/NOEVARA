@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="page-title">Service Detail - NOEVARA Consulting</title>
+<meta id="page-desc" name="description" content="NOEVARA service detail.">
+<link rel="icon" href="images/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="images/logo-icon.png" alt="NOEVARA logo">
+      <span class="brand-text"><span class="name">NOEVARA</span><span class="tag">Strategy · Clarity · Impact</span></span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="services.html">Services</a></li>
+        <li><a href="about.html">About &amp; Values</a></li>
+        <li><a href="about.html#practice">Our Experts</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <div class="nav-phone"><span>Call us</span><strong>+33 7 52 71 20 15</strong></div>
+      <a href="contact.html" class="btn btn-primary btn-sm">Book a Diagnostic Call</a>
+      <button class="nav-toggle-mobile" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav">
+  <div class="mobile-nav-top"><img src="images/logo-icon.png" alt="NOEVARA"><button class="mobile-nav-close">&times;</button></div>
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About &amp; Values</a>
+  <a href="about.html#practice">Our Experts</a>
+  <a href="insights.html">Insights</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-primary btn-block">Book a Diagnostic Call</a>
+</div>
+
+<!-- ============ DETAIL HERO (populated by JS) ============ -->
+<section class="detail-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / <a href="services.html">Services</a> / <span id="crumb-name">…</span></div>
+    <div class="eyebrow" id="hero-kicker">Loading…</div>
+    <h1 id="hero-title">Loading service…</h1>
+    <p class="lede" id="hero-tagline"></p>
+    <div class="detail-tags" id="hero-tags"></div>
+  </div>
+</section>
+
+<!-- ============ DETAIL BODY ============ -->
+<section class="section">
+  <div class="container">
+    <div class="detail-layout">
+      <div>
+        <div class="detail-block">
+          <h2>The Problem</h2>
+          <div class="problem-box">
+            <h4>What clients tell us</h4>
+            <p id="problem-text"></p>
+          </div>
+        </div>
+
+        <div class="detail-block">
+          <h2>What It Delivers</h2>
+          <ul class="deliver-list" id="delivers-list"></ul>
+        </div>
+
+        <div class="detail-block">
+          <h2>Business Impact</h2>
+          <div class="impact-box">
+            <h4>Why it matters</h4>
+            <p id="impact-text"></p>
+          </div>
+        </div>
+
+        <div class="detail-block">
+          <h2>Common Questions &amp; Problems We Hear</h2>
+          <div class="faq-intro">If any of this sounds like your organisation, that's exactly the point - these are the recurring conversations that lead companies to engage us.</div>
+          <div class="accordion" id="faq-accordion"></div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="sidebar-card">
+          <h4>At a Glance</h4>
+          <ul>
+            <li><span>Category</span> <b id="side-category"></b></li>
+            <li><span>Duration</span> <b id="side-duration"></b></li>
+            <li><span>Format</span> <b id="side-format"></b></li>
+            <li><span>Access</span> <b>Via scheduled engagement</b></li>
+          </ul>
+          <p style="font-size:.78rem;color:var(--ink-300);margin-top:14px;line-height:1.6;">This instrument is administered by our team as part of a NOEVARA engagement - book a call below and we'll set up your session.</p>
+          <a href="contact.html" class="btn btn-primary btn-block" style="margin-top:16px;">Book a Diagnostic Call</a>
+        </div>
+        <div class="sidebar-card">
+          <h4>Related Services</h4>
+          <div id="related-services"></div>
+        </div>
+        <div class="sidebar-card" style="background:var(--paper-50);">
+          <h4>Speak to a Consultant</h4>
+          <p style="font-size:.85rem;color:var(--ink-500);margin-bottom:14px;">Prefer to talk it through first? Reach us directly.</p>
+          <p style="font-size:.88rem;margin-bottom:6px;"><span class="icon-inline"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.5l1.5 4-2 1.5a12 12 0 0 0 6 6l1.5-2 4 1.5V19a2 2 0 0 1-2 2C10 21 3 14 3 6a2 2 0 0 1 2-2z"/></svg></span> +33 7 52 71 20 15</p>
+          <p style="font-size:.88rem;margin-bottom:0;"><span class="icon-inline"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg></span> contact@noevaraconsulting.com</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="cta-banner">
+      <div>
+        <h2>Ready to see this diagnostic applied to your organisation?</h2>
+        <p>Book a call and we'll walk you through exactly how this engagement would run for your specific situation.</p>
+      </div>
+      <div class="btn-group">
+        <a href="contact.html" class="btn btn-primary">Book a Diagnostic Call</a>
+        <a href="services.html" class="btn btn-outline">Browse All Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo-icon-transparent.png" alt="NOEVARA">
+        <p>Transformation Intelligence &amp; Strategic Consulting. Evidence-based diagnostics and execution-focused consulting for European organisations of every sector.</p>
+        <div class="footer-socials"><a href="#">in</a><a href="#">𝕏</a></div>
+      </div>
+      <div>
+        <h5>Diagnostics</h5>
+        <ul>
+          <li><a href="service-detail.html?id=orgscan">OrgScan</a></li>
+          <li><a href="service-detail.html?id=ai-maturity-lens">AI Maturity Lens</a></li>
+          <li><a href="service-detail.html?id=eu-regulatory-radar">EU Regulatory Radar</a></li>
+          <li><a href="service-detail.html?id=perpetua">PERPETUA</a></li>
+          <li><a href="services.html">View all 9 →</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About &amp; Values</a></li>
+          <li><a href="about.html#practice">Our Experts</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul class="footer-contact">
+          <li><span class="icon-inline"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.3"/></svg></span> Strasbourg, France</li>
+          <li><span class="icon-inline"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.5l1.5 4-2 1.5a12 12 0 0 0 6 6l1.5-2 4 1.5V19a2 2 0 0 1-2 2C10 21 3 14 3 6a2 2 0 0 1 2-2z"/></svg></span> +33 7 52 71 20 15</li>
+          <li><span class="icon-inline"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg></span> contact@noevaraconsulting.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 NOEVARA Consulting. All rights reserved.</span>
+      <span>Strasbourg, France · Strategy. Clarity. Impact.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/icons.js"></script>
+<script src="js/services-data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+  const service = getServiceById(id);
+
+  if (!service) {
+    document.getElementById("hero-title").textContent = "Service not found";
+    document.getElementById("hero-tagline").textContent = "We couldn't find that service. Please browse the full portfolio.";
+    document.getElementById("hero-kicker").textContent = "404";
+  } else {
+    const cat = getCategoryById(service.category);
+    document.getElementById("page-title").textContent = service.name + " - NOEVARA Consulting";
+    document.getElementById("page-desc").setAttribute("content", service.summary);
+    document.getElementById("crumb-name").textContent = service.name;
+    document.getElementById("hero-kicker").textContent = cat.short + " · " + service.name;
+    document.getElementById("hero-title").textContent = service.name;
+    document.getElementById("hero-tagline").textContent = service.tagline + " - " + service.summary;
+    document.getElementById("hero-tags").innerHTML = `<span class="detail-tag">${cat.name}</span><span class="detail-tag">${service.duration}</span>`;
+
+    document.getElementById("problem-text").textContent = service.problem;
+    document.getElementById("impact-text").textContent = service.impact;
+
+    document.getElementById("delivers-list").innerHTML = service.delivers.map(d => `
+      <li><span class="check">${svgIcon('check',13)}</span><span>${d}</span></li>
+    `).join("");
+
+    document.getElementById("side-category").textContent = cat.short;
+    document.getElementById("side-duration").textContent = service.duration;
+    document.getElementById("side-format").textContent = service.format;
+
+    document.getElementById("faq-accordion").innerHTML = service.faqs.map((f,i) => `
+      <div class="accordion-item ${i===0 ? 'open':''}">
+        <button class="accordion-trigger"><span>${f.q}</span><span class="plus"></span></button>
+        <div class="accordion-panel" style="${i===0 ? '' : ''}"><div class="accordion-panel-inner">${f.a}</div></div>
+      </div>
+    `).join("");
+
+    // Related services
+    const relatedEl = document.getElementById("related-services");
+    (service.related || []).forEach(rid => {
+      const r = getServiceById(rid);
+      if (!r) return;
+      relatedEl.insertAdjacentHTML("beforeend", `
+        <div class="related-service">
+          <div class="icon">${svgIcon(r.icon,22)}</div>
+          <div>
+            <a href="service-detail.html?id=${r.id}">${r.name}</a>
+            <span>${r.tagline}</span>
+          </div>
+        </div>
+      `);
+    });
+
+    // main.js's global accordion handler (bound on DOMContentLoaded) covers click
+    // interaction for these dynamically-inserted items since this script runs
+    // synchronously before DOMContentLoaded fires. We just need to open the first panel.
+    const firstPanel = document.querySelector("#faq-accordion .accordion-item.open .accordion-panel");
+    if (firstPanel) firstPanel.style.maxHeight = firstPanel.scrollHeight + "px";
+  }
+</script>
+</body>
+</html>
