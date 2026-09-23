@@ -481,101 +481,24 @@ input,textarea,select{font-family:inherit;font-size:1rem;}
 
 /* ---------- Responsive ---------- */
 @media(max-width:1080px){
-  .grid-4{grid-template-columns:repeat(2,1fr);}
-  .grid-5{grid-template-columns:repeat(3,1fr);}
-  .grid-3{grid-template-columns:repeat(2,1fr);}
-  .hero .container{grid-template-columns:1fr;}
-  .hero-visual{order:-1;}
-  .split{grid-template-columns:1fr;}
-  .detail-layout{grid-template-columns:1fr;}
-  .newsletter-box{grid-template-columns:1fr;}
-  .footer-top{grid-template-columns:1fr 1fr;}
-}
-@media(max-width:760px){
-   .nav-links,
-  .nav-cta .nav-phone{
-    display:none;
-  }
-
-  .nav-toggle-mobile{
-    display:block;
-  }
-
-  /* Smaller "Book a Diagnostic Call" button on mobile */
+    .nav-links,.nav-cta .nav-phone{display:none;}
+  .nav-toggle-mobile{display:block;}
+/* Smaller Book a Diagnostic Call button */
   .nav-cta .btn{
-    padding:7px 11px;
-    font-size:.68rem;
-    gap:5px;
+    padding:8px 14px;
+    font-size:.78rem;
   }
-
-  .nav-cta{
-    gap:6px;
-  }
-
-  .brand{
-    gap:8px;
-  }
-
-  .brand-text .name{
-    font-size:1.05rem;
-  }
-
-  .brand-text .tag{
-    font-size:.52rem;
-  }
-
-  .grid-2,
-  .grid-3,
-  .grid-4,
-  .grid-5{
-    grid-template-columns:1fr;
-  }
-
-  .stats-row{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .stat-block{
-    border-bottom:1px solid var(--line);
-  }
-
-  .form-row{
-    grid-template-columns:1fr;
-  }
-
-  .cta-banner{
-    padding:40px 28px;
-    flex-direction:column;
-    text-align:center;
-  }
-
-  .cta-banner::after{
-    display:none;
-  }
-
-  .cta-banner .btn-group{
-    justify-content:center;
-  }
-
-  .footer-top{
-    grid-template-columns:1fr;
-  }
-
-  .section{
-    padding:64px 0;
-  }
-
-  .hero .container{
-    padding-top:56px;
-    padding-bottom:56px;
-  }
-
-  .hero-floating{
-    position:static;
-    width:auto;
-    margin-top:18px;
-  }
-
+   .grid-2,.grid-3,.grid-4,.grid-5{grid-template-columns:1fr;}
+  .stats-row{grid-template-columns:repeat(2,1fr);}
+  .stat-block{border-bottom:1px solid var(--line);}
+  .form-row{grid-template-columns:1fr;}
+  .cta-banner{padding:40px 28px;flex-direction:column;text-align:center;}
+  .cta-banner::after{display:none;}
+  .cta-banner .btn-group{justify-content:center;}
+  .footer-top{grid-template-columns:1fr;}
+  .section{padding:64px 0;}
+  .hero .container{padding-top:56px;padding-bottom:56px;}
+  .hero-floating{position:static;width:auto;margin-top:18px;}
 }
 
 /* Mobile nav panel */
