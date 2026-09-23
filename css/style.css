@@ -623,6 +623,7 @@ input,textarea,select{font-family:inherit;font-size:1rem;}
   .brand-text .name{font-size:1.05rem;}
   .brand-text .tag{font-size:.56rem;}
   .nav-cta .btn{padding:10px 18px;font-size:.85rem;}
+  .nav-cta .btn{display:none;}
   .mobile-nav{padding:20px 20px 50px;}
   .mobile-nav a,.mobile-nav .mnav-group-title{font-size:.96rem;padding:12px 4px;}
 
