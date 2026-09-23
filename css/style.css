@@ -480,9 +480,6 @@ input,textarea,select{font-family:inherit;font-size:1rem;}
 .page-hero .lede{color:#c9d7ec;max-width:640px;}
 
 /* ---------- Responsive ---------- */
-this is my previous 
-
-/* ---------- Responsive ---------- */
 @media(max-width:1080px){
     .nav-links,.nav-cta .nav-phone{display:none;}
   .nav-toggle-mobile{display:block;}
@@ -497,10 +494,11 @@ this is my previous
   .section{padding:64px 0;}
   .hero .container{padding-top:56px;padding-bottom:56px;}
   .hero-floating{position:static;width:auto;margin-top:18px;}
+   }
 
 /* Mobile nav panel */
 .mobile-nav{
-  position:fixed;inset:0;background:var(--navy-950);z-index:2000;
+     position:fixed;inset:0;background:var(--navy-950);z-index:2000;
   transform:translateX(100%);transition:transform .35s var(--ease);
   overflow-y:auto;padding:26px 28px 60px;
 }
