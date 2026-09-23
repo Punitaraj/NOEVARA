@@ -483,10 +483,10 @@ input,textarea,select{font-family:inherit;font-size:1rem;}
 @media(max-width:1080px){
     .nav-links,.nav-cta .nav-phone{display:none;}
   .nav-toggle-mobile{display:block;}
-/* Smaller Book a Diagnostic Call button */
+/* Smaller Book a Call button */
   .nav-cta .btn{
-    padding:8px 14px;
-    font-size:.78rem;
+    padding:6px 12px;
+    font-size:.50rem;
   }
    .grid-2,.grid-3,.grid-4,.grid-5{grid-template-columns:1fr;}
   .stats-row{grid-template-columns:repeat(2,1fr);}
