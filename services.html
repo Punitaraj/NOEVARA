@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services &amp; Diagnostics - NOEVARA Consulting</title>
+<meta name="description" content="Nine proprietary diagnostic instruments, five core consulting practices, six new practice areas, and a full research &amp; funding service line - explore the complete NOEVARA portfolio.">
+<link rel="icon" href="images/favicon.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <img src="images/logo-icon.png" alt="NOEVARA logo">
+      <span class="brand-text"><span class="name">NOEVARA</span><span class="tag">Strategy · Clarity · Impact</span></span>
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="services.html">Services</a></li>
+        <li><a href="about.html">About &amp; Values</a></li>
+        <li><a href="about.html#practice">Our Experts</a></li>
+        <li><a href="insights.html">Insights</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <div class="nav-phone"><span>Call us</span><strong>+33 7 52 71 20 15</strong></div>
+      <a href="contact.html" class="btn btn-primary btn-sm">Book a Diagnostic Call</a>
+      <button class="nav-toggle-mobile" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav">
+  <div class="mobile-nav-top"><img src="images/logo-icon.png" alt="NOEVARA"><button class="mobile-nav-close">&times;</button></div>
+  <a href="index.html">Home</a>
+  <a href="services.html">Services</a>
+  <a href="about.html">About &amp; Values</a>
+  <a href="about.html#practice">Our Experts</a>
+  <a href="insights.html">Insights</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-primary btn-block">Book a Diagnostic Call</a>
+</div>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Services</div>
+    <div class="eyebrow">What We Do</div>
+    <h1>We solve the problems that slow your business down.</h1>
+    <p class="lede">Diagnose → Prioritise → Transform → Measure. Every problem below has a dedicated diagnostic and a dedicated solution, organised into four pillars: <strong>01 Operations</strong>, <strong>02 Digital &amp; AI</strong>, <strong>03 Knowledge</strong>, and <strong>04 Transformation</strong>. Find your problem, see its diagnostic, open its service sheet.</p>
+  </div>
+</section>
+
+<!-- ============ CATEGORY TABS ============ -->
+<section class="section" style="padding-top:56px;">
+  <div class="container">
+    <div class="category-tabs" id="category-tabs">
+      <button class="category-tab active" data-cat="all">All Services</button>
+      <button class="category-tab" data-cat="platform">TIPE Platform</button>
+      <button class="category-tab" data-cat="operations">01 · Operations</button>
+      <button class="category-tab" data-cat="digital-ai">02 · Digital &amp; AI</button>
+      <button class="category-tab" data-cat="knowledge">03 · Knowledge</button>
+      <button class="category-tab" data-cat="transformation">04 · Transformation</button>
+    </div>
+
+    <div id="service-groups"></div>
+  </div>
+</section>
+
+<!-- ============ PROBLEM → DIAGNOSTIC → SOLUTION INDEX ============ -->
+<section class="section section-alt" style="padding-top:56px;">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow" style="justify-content:center;">Problem → Diagnostic → Solution</div>
+      <h2>Find your problem. See its diagnostic. Open its service sheet.</h2>
+      <p class="lede">Every consulting engagement starts the same way: name the problem, run the dedicated diagnostic, then deliver the solution the evidence points to.</p>
+    </div>
+    <style>
+      .pds-pillar { margin-bottom: 44px; }
+      .pds-pillar:last-child { margin-bottom: 0; }
+      .pds-pillar-head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 6px; flex-wrap: wrap; }
+      .pds-pillar-head h3 { margin: 0; font-size: 1.15rem; }
+      .pds-pillar-head .pds-num { font-family: var(--ff-head); font-weight: 700; color: var(--orange-500); }
+      .pds-pillar-head p { margin: 0 0 14px; color: var(--ink-500); font-size: .9rem; width: 100%; }
+      .pds-table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; font-size: .86rem; }
+      .pds-table th { text-align: left; font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; color: var(--ink-300); padding: 12px 16px; border-bottom: 1px solid var(--line); background: var(--paper-50); }
+      .pds-table td { padding: 13px 16px; border-bottom: 1px solid var(--line); vertical-align: top; }
+      .pds-table tr:last-child td { border-bottom: none; }
+      .pds-table tr:hover td { background: var(--paper-50); }
+      .pds-table td.pds-diag { white-space: nowrap; font-weight: 600; color: var(--navy-900); }
+      .pds-table td.pds-prob { color: var(--ink-500); max-width: 560px; }
+      .pds-table a { color: var(--navy-900); font-weight: 700; white-space: nowrap; }
+      .pds-table a:hover { color: var(--orange-500); }
+      @media (max-width: 720px) {
+        .pds-table td.pds-diag { white-space: normal; }
+        .pds-table, .pds-table th, .pds-table td { font-size: .8rem; }
+      }
+    </style>
+    <div id="pds-index"></div>
+  </div>
+</section>
+
+<!-- ============ ENGAGEMENT MODEL ============ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head center">
+      <div class="eyebrow" style="justify-content:center;">How Every Engagement Runs</div>
+      <h2>Diagnose → Transform → Measure.</h2>
+      <p class="lede">One method across all four pillars. No diagnosis, no prescription.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.5-4.5"/></svg></div>
+        <h3>Diagnose</h3>
+        <p>Run the dedicated diagnostic for your problem - then prioritise by evidence, not opinion.</p>
+        <p style="font-size:.84rem;color:var(--ink-500);margin-bottom:0;">Capacity · Productivity · Digital maturity · AI readiness · Data readiness · Knowledge health · Transformation health</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 3v2.2M12 18.8V21M21 12h-2.2M5.2 12H3M18.4 5.6l-1.6 1.6M7.2 16.8l-1.6 1.6M18.4 18.4l-1.6-1.6M7.2 7.2 5.6 5.6"/></svg></div>
+        <h3>Transform</h3>
+        <p>Deliver the solution the diagnosis points to - with ownership, governance, and follow-through.</p>
+        <p style="font-size:.84rem;color:var(--ink-500);margin-bottom:0;">Optimise · Automate · Integrate · Implement AI · Capture knowledge · Redesign processes · Enable people</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4v5h5"/><path d="M20 20v-5h-5"/><path d="M5.5 9A7 7 0 0 1 19 9.5"/><path d="M18.5 15A7 7 0 0 1 5 14.5"/></svg></div>
+        <h3>Measure</h3>
+        <p>Prove it moved the number - then keep watching with TIPE so gains hold.</p>
+        <p style="font-size:.84rem;color:var(--ink-500);margin-bottom:0;">Cost ↓ · Downtime ↓ · Lead time ↓ · Scrap ↓ · Productivity ↑ · AI ROI ↑ · Adoption ↑</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BUNDLED PACKAGES ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Where To Start</div>
+      <h2>Four entry sprints, one per pillar.</h2>
+    </div>
+    <div class="grid grid-4">
+      <div class="card"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20h18"/><path d="M6 20v-6"/><path d="M11 20V9"/><path d="M16 20v-4"/><path d="M20 20V6"/><path d="M14 5l6 1-2 5"/></svg></div><h3>01 · Operations Sprint</h3><p>Bottleneck + OEE diagnostic + 90-day throughput plan.</p><a href="service-detail.html?id=capacity-throughput" style="font-size:.82rem;font-weight:700;">Start here →</a></div>
+      <div class="card"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="1.5"/><rect x="10" y="2.5" width="1.6" height="3"/><rect x="12.4" y="2.5" width="1.6" height="3"/><rect x="10" y="18.5" width="1.6" height="3"/><rect x="12.4" y="18.5" width="1.6" height="3"/><rect x="2.5" y="10" width="3" height="1.6"/><rect x="2.5" y="12.4" width="3" height="1.6"/><rect x="18.5" y="10" width="3" height="1.6"/><rect x="18.5" y="12.4" width="3" height="1.6"/></svg></div><h3>02 · AI ROI Sprint</h3><p>AI Opportunity &amp; ROI Scan + prioritised business cases + roadmap.</p><a href="service-detail.html?id=ai-transformation" style="font-size:.82rem;font-weight:700;">Start here →</a></div>
+      <div class="card"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M20 20l-4.5-4.5"/></svg></div><h3>03 · Knowledge Sprint</h3><p>Discovery audit + at-risk capture + reuse quick wins.</p><a href="service-detail.html?id=knowledge-discovery" style="font-size:.82rem;font-weight:700;">Start here →</a></div>
+      <div class="card"><div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4v5h5"/><path d="M20 20v-5h-5"/><path d="M5.5 9A7 7 0 0 1 19 9.5"/><path d="M18.5 15A7 7 0 0 1 5 14.5"/></svg></div><h3>04 · Transformation Health Sprint</h3><p>Health check + 90-day execution plan + governance.</p><a href="service-detail.html?id=transformation-execution" style="font-size:.82rem;font-weight:700;">Start here →</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="cta-banner">
+      <div>
+        <h2>Not sure where to start?</h2>
+        <p>Most relationships begin with a single diagnostic. Tell us what's on your mind and we'll recommend the right entry point.</p>
+      </div>
+      <div class="btn-group">
+        <a href="contact.html" class="btn btn-primary">Talk to Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo-icon-transparent.png" alt="NOEVARA">
+        <p>Transformation Intelligence &amp; Strategic Consulting. Evidence-based diagnostics and execution-focused consulting for European organisations of every sector.</p>
+        <div class="footer-socials"><a href="#">in</a><a href="#">𝕏</a></div>
+      </div>
+      <div>
+        <h5>Diagnostics</h5>
+        <ul>
+          <li><a href="service-detail.html?id=orgscan">OrgScan</a></li>
+          <li><a href="service-detail.html?id=ai-maturity-lens">AI Maturity Lens</a></li>
+          <li><a href="service-detail.html?id=eu-regulatory-radar">EU Regulatory Radar</a></li>
+          <li><a href="service-detail.html?id=perpetua">PERPETUA</a></li>
+          <li><a href="services.html">View all 9 →</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About &amp; Values</a></li>
+          <li><a href="about.html#practice">Our Experts</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="insights.html">Insights</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul class="footer-contact">
+          <li><span class="icon-inline"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.3"/></svg></span> Strasbourg, France</li>
+          <li><span class="icon-inline"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h3.5l1.5 4-2 1.5a12 12 0 0 0 6 6l1.5-2 4 1.5V19a2 2 0 0 1-2 2C10 21 3 14 3 6a2 2 0 0 1 2-2z"/></svg></span> +33 7 52 71 20 15</li>
+          <li><span class="icon-inline"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6 8.5 7 8.5-7"/></svg></span> contact@noevaraconsulting.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 NOEVARA Consulting. All rights reserved.</span>
+      <span>Strasbourg, France · Strategy. Clarity. Impact.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/icons.js"></script>
+<script src="js/services-data.js"></script>
+<script src="js/main.js"></script>
+<script>
+  const groupsEl = document.getElementById("service-groups");
+  const diagOf = (s) => s.diagnostic || "TIPE Diagnostic";
+
+  function tileHTML(s){
+    return `
+      <div class="service-tile reveal in" onclick="location.href='service-detail.html?id=${s.id}'" style="cursor:pointer;" role="link" tabindex="0" onkeydown="if(event.key==='Enter')location.href='service-detail.html?id=${s.id}'">
+        <div class="tile-top">
+          <div class="icon">${svgIcon(s.icon,24)}</div>
+          <span class="kicker">${diagOf(s)}</span>
+          <h3>${s.name}</h3>
+          <span style="font-size:.82rem;color:var(--ink-500);">${s.tagline}</span>
+        </div>
+        <div class="problem-preview" style="display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;"><strong>Your problem:</strong> ${s.problem}</div>
+        <div class="tile-bottom">
+          <span style="font-size:.78rem;color:var(--ink-300);">${s.duration}</span>
+          <a href="service-detail.html?id=${s.id}" onclick="event.stopPropagation();">View details →</a>
+        </div>
+      </div>
+    `;
+  }
+
+  function render(filter){
+    groupsEl.innerHTML = "";
+    const cats = filter === "all" ? SERVICE_CATEGORIES : SERVICE_CATEGORIES.filter(c => c.id === filter);
+    cats.forEach(cat => {
+      const items = getServicesByCategory(cat.id);
+      if (!items.length) return;
+      const group = document.createElement("div");
+      group.className = "service-group";
+      group.innerHTML = `
+        <div class="service-group-head">
+          <h2>${cat.num ? cat.num + " — " : ""}${cat.name}</h2>
+          <p>${cat.desc}</p>
+        </div>
+        <div class="grid grid-3">${items.map(tileHTML).join("")}</div>
+      `;
+      groupsEl.appendChild(group);
+    });
+  }
+
+  // Problem → Diagnostic → Solution index (four pillars only)
+  (function renderIndex(){
+    const host = document.getElementById("pds-index");
+    if (!host) return;
+    ["operations","digital-ai","knowledge","transformation"].forEach(catId => {
+      const cat = getCategoryById(catId);
+      const items = getServicesByCategory(catId).filter(s => s.diagnostic);
+      if (!items.length) return;
+      let rows = "";
+      items.forEach(s => {
+        rows += `<tr><td class="pds-prob">${s.problem}</td><td class="pds-diag">${s.diagnostic}</td><td><a href="service-detail.html?id=${s.id}">${s.name} →</a></td></tr>`;
+        (s.also || []).forEach(a => {
+          rows += `<tr><td class="pds-prob">${a.problem}</td><td class="pds-diag">${a.diagnostic}</td><td><a href="service-detail.html?id=${s.id}">${s.name} →</a></td></tr>`;
+        });
+      });
+      host.insertAdjacentHTML("beforeend", `
+        <div class="pds-pillar">
+          <div class="pds-pillar-head">
+            <span class="pds-num">${cat.num}</span><h3>${cat.name}</h3>
+            <p>${cat.desc}</p>
+          </div>
+          <div style="overflow-x:auto;">
+          <table class="pds-table">
+            <thead><tr><th>Client problem</th><th>Diagnostic</th><th>Solution</th></tr></thead>
+            <tbody>${rows}</tbody>
+          </table>
+          </div>
+        </div>
+      `);
+    });
+  })();
+
+  function setFilter(cat){
+    document.querySelectorAll(".category-tab").forEach(t => t.classList.toggle("active", t.dataset.cat === cat));
+    render(cat);
+  }
+
+  // Deep-link support: services.html#operations etc.
+  const initial = (location.hash || "").replace("#","");
+  render(getCategoryById(initial) ? initial : "all");
+  if (getCategoryById(initial)) setFilter(initial);
+
+  document.querySelectorAll(".category-tab").forEach(tab => {
+    tab.addEventListener("click", () => {
+      history.replaceState(null, "", tab.dataset.cat === "all" ? location.pathname : "#" + tab.dataset.cat);
+      setFilter(tab.dataset.cat);
+    });
+  });
+</script>
+</body>
+</html>
