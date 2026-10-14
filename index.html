@@ -191,16 +191,17 @@
     if (!word || !card) return;
     // Hero film playlist: hero-consult.mp4 plays once, then hero-services.mp4 loops
     var heroVideo = document.getElementById("hero-video");
-    if (heroVideo) {
-      heroVideo.addEventListener("ended", function(){
-        if (heroVideo.dataset.part !== "two") {
-          heroVideo.dataset.part = "two";
-          heroVideo.src = "images/hero-services.mp4";
-          heroVideo.loop = true;
-          heroVideo.play();
-        }
-      });
+var isMobile = window.matchMedia("(max-width: 768px)").matches;
+if (heroVideo) {
+  heroVideo.addEventListener("ended", function(){
+    if (heroVideo.dataset.part !== "two") {
+      heroVideo.dataset.part = "two";
+      heroVideo.src = isMobile ? "images/hero-services-mobile.mp4" : "images/hero-services.mp4";
+      heroVideo.loop = true;
+      heroVideo.play();
     }
+  });
+}
     setInterval(function(){
       i = (i + 1) % cases.length;
       word.classList.add("fade"); card.classList.add("fade");
